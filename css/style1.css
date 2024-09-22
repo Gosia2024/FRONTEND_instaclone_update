@@ -1,0 +1,524 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.big {
+    display: flex;
+    flex-direction: row;
+
+    /* Kontener o pełnej wysokości dla elastycznych kontenerów */
+}
+
+
+.sidebar-header{                   
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 20px;
+}
+
+
+    .middle-container {
+        flex: 1;
+        background-color: #f7f6f6;
+        
+        flex: 1;
+        /* overflow: scroll; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+.suggested-accounts {
+    flex: 1;
+    /* Kontener suggested-accounts będzie zajmował pozostałą przestrzeń */
+
+    width: 400px;
+}
+
+
+.imgPost {
+    /*width: 200px;*/
+    /*width: 200px;*/
+    /*margin-left: 200px;*/
+    margin-right: 200px;
+    /*height: 300px;*/
+    object-fit: cover;
+
+
+}
+
+.suggestions-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    row-gap: 50px;
+    column-gap: 50px;
+    padding-left: 0;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 100px;
+    font-weight: 700;
+}
+
+.suggestions-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.suggestions-list li img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.sidebar {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+
+    
+        display: flex;
+        flex-direction: column;
+       
+        padding: 16px;
+    
+    
+}
+
+
+
+.card {
+    border: 1px solid rgba(0, 0, 0.1);
+    margin: 20px;
+    padding: 10px;
+    width: 600px;
+    background-color: #fff;
+    /* Dodaj tło karty, aby obraz nie był niewidoczny na białym tle */
+    border-right: 1px solid #ccc;
+    /* Obramowanie dla całego kontenera */
+    padding: 10px;
+    /* Dodatkowy wewnętrzny odstęp dla lepszego wyglądu */
+
+}
+
+
+
+.imgLogo {
+    border-radius: 50%;
+    /* Zaokrąglenie obrazu, aby uzyskać efekt koła */
+    width: 50px;
+    /* Szerokość obrazu logo */
+    height: 50px;
+    /* Wysokość obrazu logo */
+}
+
+.description {
+    margin-top: 10px;
+    /* Dodaj margines odstępu nad opisem */
+    font-size: 14px;
+    /* Ustaw odpowiedni rozmiar czcionki */
+    color: #333;
+    /* Ustaw odpowiedni kolor tekstu */
+}
+
+.user-avatar img {
+    width: 30px;
+    height: 30px;
+}
+
+.user {
+    display: flex;
+}
+
+.icons img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    
+   
+}
+
+.icons {
+    background-color: white;
+    width: 600px;
+   
+    border: 1px solid #ded7d7;
+    /* Obramowanie dla całego kontenera */
+    padding: 10px;
+    /* Dodatkowy wewnętrzny odstęp dla lepszego wyglądu */
+   
+    display: flex;
+    justify-content: center;
+
+}
+
+.icons-suggested{
+    background-color: white;
+  
+    margin-left: 20px;
+   
+    /* Obramowanie dla całego kontenera */
+    padding: 10px;
+    /* Dodatkowy wewnętrzny odstęp dla lepszego wyglądu */
+    margin-top: 20px;
+
+}
+
+.blackHeart {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.redHeart {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sprachblasenSymbol {
+    width: 30px;
+    height: 30px;
+}
+
+.sendenSymbol{
+    width: 30px;
+    height: 30px;
+}
+
+.profil{
+    margin-top: 100px;
+}
+
+.card-headline{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.card {
+    border: 1px solid rgb(232, 228, 228);
+    /*margin: 20px;*/
+    width: 600px;
+    background-color: #fff;
+    /*border: 1px solid #aba7a7;*/
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .content {
+    flex: 1; /* Rozciąga zawartość, aby zajęła dostępną przestrzeń */
+}
+
+
+input {
+    word-wrap: break-word; /* dla starszych przeglądarek */
+    overflow-wrap: break-word; /* dla nowszych przeglądarek */
+    padding: 20px;
+    border: none;
+}
+.card img {
+    max-width: 100%;
+    height: auto; /* Zapewnia proporcjonalne dopasowanie wysokości */
+}
+
+
+.icons img {
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+    border: 3px solid rgb(223, 114, 132);
+    object-fit: cover;
+}
+
+
+.user-avatar img{
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+    border: 3px solid rgb(223, 114, 132);
+    object-fit: cover;
+    margin-top: 10px;
+}
+button{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(189, 189, 237);
+    cursor: pointer;
+
+    
+}
+
+
+
+.description {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+
+
+.username{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+@media (max-width: 1300px) {
+    .suggested-accounts {
+        display: none;
+    }
+
+  
+}
+
+
+
+
+
+
+@media (max-width: 970px) {
+    .big {
+        flex-direction: column-reverse; 
+    }
+
+  .suggestions-list{
+    flex-direction: row;
+  }
+  .suggestions-list li{
+    display: block;
+  }
+
+  /*.sidebar-header {
+    display: block;
+  }*/
+  .sidebar-header{
+    text-align: start;
+  }
+  .sidebar-header{
+    display: none;
+  }
+  .sidebar{
+    flex-direction: row;
+    justify-content: center;
+    padding: 16px;
+    /*display: block;*/
+  }
+  span{
+    display:none;
+  }
+}
+
+@media (max-width: 1200px){
+    .imgPost {
+      margin-right: 0px;
+    
+    }
+    .card{
+        margin: 0px;
+    }
+}
+
+@media (max-width: 650px) {
+    .icons{
+      max-width: 300px
+    }
+  .icons img{
+    width: 30px;
+    height: 30px;
+  }
+  .card{
+    max-width: 300px;
+  }
+  .suggestions-list {
+    column-gap: 0px;
+  }
+}
+
+@media (max-width: 400px){
+    .card{
+        max-width: 300px;
+      }
+}
+@media (max-width: 350px) {
+    .content {
+        max-width: 350px;
+    }
+
+    .card img{
+        max-width: 200px;
+        margin-left: 50px;
+    }
+    .description {
+         margin-top: 14px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .card-headline {
+         display: block; 
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+@media(max-width: 340px){
+    button{
+        max-width: 200px;
+    }
+    .icons{
+        padding: 0px;
+    }
+    .card{
+        padding: 0px;
+    }
+}
+.user-name
+{
+    padding: 20px;
+    font-weight: 800;
+    font-size: 20px;
+}
+.follows{
+    padding: 10px;
+}
+
+.wrapWord{
+    
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 20px;
+        border: none;
+    
+}
+
+.wrapUser{
+    
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 20px;
+        border: none;
+    
+}
+
+
+
+/*----------------------style dla fromularza----------------------------*/
+
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    /*max-width: 400px;*/
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------style dla create--------------------------*/
+/* Ustawienie stylów dla kontenera */
+/* Resetowanie domyślnych stylów */
+.suggestions-list li a {
+    text-decoration: none; /* Remove the default underline */
+    color: blue; /* Set the default color to blue */
+    font-weight: bold; /* Optional: Make the text bold */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.suggestions-list li a:hover {
+    color: darkblue; /* Change the color on hover */
+}
+
+.suggestions-list li a span {
+    margin-left: 5px; /* Space between the icon and text */
+}
+
+/*style dla deleteComment button*/
+.comment {
+    display: flex; /* Ustawia elastyczne kontenery */
+    justify-content: space-between; /* Rozmieszcza elementy maksymalnie daleko od siebie */
+    align-items: center; /* Wyrównanie w pionie */
+    margin-bottom: 10px; /* Odstęp między komentarzami */
+    padding: 5px;
+    border: 1px solid #ccc; /* Opcjonalnie, dla wyróżnienia */
+    border-radius: 5px;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Dostosowanie treści komentarza do szerokości kontenera */
+}
+
+.belka {
+   
+    width: 100px;
+    border-radius: 60px;
+    margin-right: 50px; /* Przesuwa przycisk na prawą stronę */
+}
+
+/* Stylowanie dla ekranów poniżej 950 px */
+@media (max-width: 950px) {
+    .comment {
+        display: flex;
+        flex-direction: column; /* Ustawienie elementów w kolumnie */
+        align-items: flex-start; /* Wyrównanie elementów do lewej */
+        padding: 10px; /* Większe padding dla lepszej czytelności */
+    }
+    
+   .b span{
+    flex-direction: column;/*???????????????????????????????poprawic w mobilny ustwienie komentarza*/
+   }
+}
+
+
+@media (max-width: 970px) {
+    .suggestions-list li a {
+        display: flex; /* Zapewnia widoczność linku */
+        align-items: center;
+        text-decoration: none; /* Usuwa podkreślenie */
+    }
+
+    .suggestions-list li a img {
+        width: 24px; /* Dostosuj rozmiar ikony */
+        height: 24px;
+    }
+
+    .suggestions-list li a span {
+        display: inline; /* Upewnij się, że tekst jest widoczny */
+        font-size: 14px;
+    }
+}

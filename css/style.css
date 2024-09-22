@@ -1,0 +1,220 @@
+body {
+    background-color: rgb(25, 121, 194);
+  /*  display: flex;  Ustawienie flexbox na całe body */
+    flex-direction: column; /* Ustawienie kierunku układu na kolumnę */
+    align-items: center; /* Wyśrodkowanie poziome */
+    justify-content: center; /* Wyśrodkowanie pionowe */
+    min-height: 100vh; /* Wysokość na całą wysokość okna przeglądarki */
+    margin: 0; /* Usunięcie domyślnych marginesów */
+    font-family: Arial, sans-serif; /* Opcjonalnie: Ustawienie czcionki */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Poprawienie cienia - użycie poprawnej wartości alfa */
+    padding: 20px; /* Opcjonalnie: dodanie paddingu wewnątrz body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/* Styl nagłówka h1 */
+h1, h2 {
+    text-align: center; /* Wyśrodkowanie tekstu nagłówka */
+    color: rgb(228, 219, 219) !important; /* Kolor tekstu na biały z !important */
+    margin-bottom: 20px; /* Margines dolny dla lepszego odstępu */
+    font-size: 36px; /* Powiększenie czcionki */
+}
+
+
+/* Styl formularza */
+form {
+    background-color: white; /* Kolor tła formularza */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(10, 10, 10, 0.3); /* Poprawienie cienia - użycie poprawnej wartości alfa */
+    max-width: 500px;
+   /* width: 100%;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Media Queries */
+/* Styl dla ekranów o szerokości mniejszej niż 768px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Zmniejszenie rozmiaru czcionki nagłówka */
+    }
+
+    form {
+        padding: 15px; /* Zmniejszenie paddingu formularza */
+        box-shadow: 0px 4px 15px rgba(10, 10, 10, 0.2); /* Lżejszy cień dla mniejszych ekranów */
+    }
+}
+
+/* Styl dla ekranów o szerokości mniejszej niż 480px */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Jeszcze mniejszy rozmiar czcionki nagłówka */
+    }
+
+    form {
+        padding: 10px; /* Jeszcze mniejszy padding formularza */
+        box-shadow: 0px 4px 10px rgba(10, 10, 10, 0.15); /* Lżejszy cień */
+    }
+
+    body {
+        padding: 10px; /* Mniejszy padding dla całego body */
+    }
+}
+
+
+
+
+
+/* Form labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    width: 100%; /* Take full width */
+    text-align: center; /* Center label text */
+}
+
+/* Inputs and Textarea */
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    max-width: 400px; /* Optional: Limit max width */
+}
+
+/* Center text inside inputs */
+input[type="text"],
+select {
+    text-align: center;
+}
+
+/* File input style */
+input[type="file"] {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    /*max-width: 400px;*/
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design dla crate button*/
+
+@media (max-width: 970px) {
+    .suggestions-list li a {
+        display: flex; /* Zapewnia widoczność linku */
+        align-items: center;
+        text-decoration: none; /* Usuwa podkreślenie */
+    }
+
+    .suggestions-list li a img {
+        width: 24px; /* Dostosuj rozmiar ikony */
+        height: 24px;
+    }
+
+    .suggestions-list li a span {
+        display: inline; /* Upewnij się, że tekst jest widoczny */
+        font-size: 14px;
+    }
+}
+/* Style dla małych ekranów */
+@media (max-width: 450px) {
+    form {
+        padding: 0px; /* Usuwa padding na małych ekranach */
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+        width: 50%; /* Ustawia szerokość na 0 */
+        padding: 0; /* Usuwa padding na małych ekranach */
+        border: none; /* Opcjonalnie usuń obramowanie, aby nie było widoczne */
+        margin: 0; /* Usuń marginesy na małych ekranach */
+    }
+    input[type="file"]{
+        font-size: 14px;
+    }
+}
+
+
+
+/*----------------------style dla create--------------------------*/
+/* Ustawienie stylów dla kontenera */
+/* Resetowanie domyślnych stylów */
+.suggestions-list li a {
+    text-decoration: none; /* Remove the default underline */
+    color: blue; /* Set the default color to blue */
+    font-weight: bold; /* Optional: Make the text bold */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.suggestions-list li a:hover {
+    color: darkblue; /* Change the color on hover */
+}
+
+.suggestions-list li a span {
+    margin-left: 5px; /* Space between the icon and text */
+}
+
+/*style dla deleteComment button*/
+.comment {
+    display: flex; /* Ustawia elastyczne kontenery */
+    justify-content: space-between; /* Rozmieszcza elementy maksymalnie daleko od siebie */
+    align-items: center; /* Wyrównanie w pionie */
+    margin-bottom: 10px; /* Odstęp między komentarzami */
+    padding: 5px;
+    border: 1px solid #ccc; /* Opcjonalnie, dla wyróżnienia */
+    border-radius: 5px;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Dostosowanie treści komentarza do szerokości kontenera */
+}
+
+.belka {
+   
+    width: 100px;
+    border-radius: 60px;
+    margin-right: 50px; /* Przesuwa przycisk na prawą stronę */
+}
+
+/* Stylowanie dla ekranów poniżej 950 px */
+@media (max-width: 950px) {
+    .comment {
+        display: flex;
+        flex-direction: column; /* Ustawienie elementów w kolumnie */
+        align-items: flex-start; /* Wyrównanie elementów do lewej */
+        padding: 10px; /* Większe padding dla lepszej czytelności */
+    }
+    
+   .b span{
+    flex-direction: column;/*???????????????????????????????poprawic w mobilny ustwienie komentarza*/
+   }
+}
